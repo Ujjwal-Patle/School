@@ -1,0 +1,142 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    margin-top: 100px;
+}
+
+.header, .footer {
+    background-color: #000969;
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.header img{
+    width: 230px;
+    padding-left: 20px;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.container {
+    padding: 10px;
+}
+
+/* Header Styles */
+.headerLeft {
+    width: 220px;
+}
+
+.headerRight {
+    padding: 0 20px;
+    flex-grow: 1;
+    text-align: center;  
+}
+
+.img {
+    width: 100%;
+}
+
+.heading {
+    font-size: 4rem;
+    color: orange;
+}
+
+.text {
+    font-size: 1.2rem;
+}
+
+/* Main Section Styles */
+.main {
+    padding-top: 33px;
+    min-height: calc(100vh - 220px);
+}
+
+.body {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mainSec {
+    margin: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    margin: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000969;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0021a5;
+}
+
+.logoutSec {
+    margin-top: 20px;
+        padding-top: 30px;
+}
+
+.logout {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b30000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+    background-color: #0021a5;
+}
+
+/* Footer Styles */
+.sec {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.sec a {
+    color: #fff;
+    text-decoration: none;
+}

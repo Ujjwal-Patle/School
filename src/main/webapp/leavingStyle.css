@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    width: 100%;
+    max-width: 300mm;
+    margin: auto;
+    box-sizing: border-box; /* Ensure the box model is consistent */
+}
+
+.container {
+    width: 100%;
+    max-width: 200mm;
+    margin: 3px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1,
+.header h4 {
+    margin: 2px;
+}
+
+.info-line,
+.space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 2px;
+    white-space: nowrap;
+}
+
+.space1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 2px;
+    width: fit-content;
+}
+
+.about h1,
+.about p,
+.about h2,
+.info-line {
+    text-align: center;
+    margin: 0;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.aadhar-box,
+.id-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.aadhar-digit,
+.id-digit {
+    display: inline-block;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 8px;
+}
+
+.aadhar-box {
+    justify-content: flex-start; /* Keep Aadhar digits aligned to the left */
+}
+
+.underline {
+    border-bottom: 1px solid;
+}
+
+.underline-space {
+    display: inline-block;
+    
+}
+
+.bottom {
+    padding-left: 35px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 30px;
+}
+
+.sign {
+    height: 50px;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+
+@media print {
+    body,
+    .container {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .space,
+    .info-line {
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .info-line,
+    .space,
+    .space1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-line span,
+    .space span,
+    .space1 span {
+        margin: 5px 0;
+    }
+}
